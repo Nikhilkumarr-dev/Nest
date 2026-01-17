@@ -4,6 +4,6 @@ import { getStaticMetadata } from 'utils/metaconfig'
 
 export const metadata: Metadata = getStaticMetadata('about', '/about')
 
-export default function AboutLayout({ children }:Readonly<{ children: React.ReactNode }>) {
+export default function AboutLayout({ children }:{ children: React.ReactNode }) {
   return children
 }
